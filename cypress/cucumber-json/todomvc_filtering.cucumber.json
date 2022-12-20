@@ -1,0 +1,144 @@
+[
+  {
+    "description": "    As a user, I am able to filter todo items following to their status",
+    "keyword": "Feature",
+    "name": "Filtering todo items in the TodoMVC Application",
+    "line": 1,
+    "id": "filtering-todo-items-in-the-todomvc-application",
+    "tags": [],
+    "uri": "todomvc_filtering.feature",
+    "elements": [
+      {
+        "id": "filtering-todo-items-in-the-todomvc-application;i-am-able-to-add-a-new-todo-item",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "I am able to add a new todo item",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I successfully browse to the Appication",
+            "result": {
+              "status": "passed",
+              "duration": 1337000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I type the name of the todo items and press Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1072000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I can add a new todo item",
+            "result": {
+              "status": "passed",
+              "duration": 89000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "filtering-todo-items-in-the-todomvc-application;i-am-able-to-filter-the-active-todo-items",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "I am able to filter the active todo items",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I click on the \"Active\" button",
+            "result": {
+              "status": "passed",
+              "duration": 262000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I can filter the active todo items",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Too many elements found. Found '3', expected '2'.\n    + expected - actual\n\n    -3\n    +2\n\n    at Function.typeOfFiltering (https://todomvc.com/__cypress/tests?p=cypress\\integration\\todomvc_filtering.feature:177:34)\n    at Context.eval (https://todomvc.com/__cypress/tests?p=cypress\\integration\\todomvc_filtering.feature:209:29)\n    at Context.resolveAndRunStepDefinition (https://todomvc.com/__cypress/tests?p=cypress\\integration\\todomvc_filtering.feature:10708:29)\n    at Context.eval (https://todomvc.com/__cypress/tests?p=cypress\\integration\\todomvc_filtering.feature:10029:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "filtering-todo-items-in-the-todomvc-application;i-am-able-to-filter-the-completed-todo-items",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "I am able to filter the completed todo items",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I click on the \"Completed\" button",
+            "result": {
+              "status": "passed",
+              "duration": 223000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I can filter the completed todo items",
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.todo-list li`, but never found it.\n    at Function.typeOfFiltering (https://todomvc.com/__cypress/tests?p=cypress\\integration\\todomvc_filtering.feature:177:34)\n    at Context.eval (https://todomvc.com/__cypress/tests?p=cypress\\integration\\todomvc_filtering.feature:216:29)\n    at Context.resolveAndRunStepDefinition (https://todomvc.com/__cypress/tests?p=cypress\\integration\\todomvc_filtering.feature:10708:29)\n    at Context.eval (https://todomvc.com/__cypress/tests?p=cypress\\integration\\todomvc_filtering.feature:10029:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "filtering-todo-items-in-the-todomvc-application;i-am-able-to-filter-all-todo-items",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "I am able to filter all todo items",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I click on the \"All\" button",
+            "result": {
+              "status": "passed",
+              "duration": 163000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I can filter all todo items",
+            "result": {
+              "status": "passed",
+              "duration": 164000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

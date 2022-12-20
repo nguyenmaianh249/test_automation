@@ -1,0 +1,201 @@
+[
+  {
+    "description": "    As a user, I am able to use all the functions in the app",
+    "keyword": "Feature",
+    "name": "Functions of the TodoMVC Application",
+    "line": 1,
+    "id": "functions-of-the-todomvc-application",
+    "tags": [],
+    "uri": "todomvc_action.feature",
+    "elements": [
+      {
+        "id": "functions-of-the-todomvc-application;i-am-able-to-see-the-title-of-the-app",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "I am able to see the title of the app",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I successfully browse to the Appication",
+            "result": {
+              "status": "passed",
+              "duration": 1148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the title of the page is 'todos'",
+            "result": {
+              "status": "passed",
+              "duration": 311000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "functions-of-the-todomvc-application;i-am-able-to-add-a-new-todo-item",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "I am able to add a new todo item",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I type the name of the todo items and press Enter",
+            "result": {
+              "status": "passed",
+              "duration": 588000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I can add a new todo item",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "functions-of-the-todomvc-application;i-am-able-to-mark-a-todo-item-as-completed",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "I am able to mark a todo item as completed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I click on the radio button on the left side of the todo",
+            "result": {
+              "status": "passed",
+              "duration": 178000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I can mark a todo item as completed",
+            "result": {
+              "status": "passed",
+              "duration": 329000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "functions-of-the-todomvc-application;i-am-able-to-a-edit-todo-item",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "I am able to a edit todo item",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I double-click on the todo content, delete the old text and type the new text",
+            "result": {
+              "status": "passed",
+              "duration": 597000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I can edit a todo item",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "functions-of-the-todomvc-application;i-am-able-to-delete-a-todo-item",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "I am able to delete a todo item",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I click on the \"x\" button of the todo",
+            "result": {
+              "status": "passed",
+              "duration": 148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I can delete a todo item",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "functions-of-the-todomvc-application;i-am-able-to-delete-the-todo-items-that-are-completed",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "I am able to delete the todo items that are completed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "Some todo items were checked",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.todo-list`, but never found it.\n    at ensureExistence (https://todomvc.com/__cypress/runner/cypress_runner.js:163642:25)\n    at $Cy.ensureElExistence (https://todomvc.com/__cypress/runner/cypress_runner.js:163660:12)\n    at ensureExistence (https://todomvc.com/__cypress/runner/cypress_runner.js:150857:25)\n    at onFailFn (https://todomvc.com/__cypress/runner/cypress_runner.js:150897:11)\nFrom previous event:\n    at $Cy.verifyUpcomingAssertions (https://todomvc.com/__cypress/runner/cypress_runner.js:150956:105)\n    at https://todomvc.com/__cypress/runner/cypress_runner.js:159567:21\nFrom previous event:\n    at resolveElements (https://todomvc.com/__cypress/runner/cypress_runner.js:159562:81)\n    at whenStable (https://todomvc.com/__cypress/runner/cypress_runner.js:168438:63)\n    at https://todomvc.com/__cypress/runner/cypress_runner.js:167935:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I click on the \"Clear completed\" button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "I can delete the todo items that are completed",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
